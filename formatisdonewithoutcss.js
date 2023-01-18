@@ -95,8 +95,8 @@
 //         return `${minutes}`;
 //         }
 //     let sunset24h = convertTime12to24h(`${result.forecast.forecastday[0].astro.sunset}`);
-//     let sunset24m = convertTime12to24h(`${result.forecast.forecastday[0].astro.sunset}`);
-//     let sunrise24h = convertTime12to24m(`${result.forecast.forecastday[0].astro.sunrise}`);
+//     let sunset24m = convertTime12to24m(`${result.forecast.forecastday[0].astro.sunset}`);
+//     let sunrise24h = convertTime12to24h(`${result.forecast.forecastday[0].astro.sunrise}`);
 //     let sunrise24m = convertTime12to24m(`${result.forecast.forecastday[0].astro.sunrise}`);
 //     let sunsettime = new Date(null, null, null, sunset24h, sunset24m);
 //     let sunrisetime = new Date(null, null, null, sunrise24h, sunrise24m);
