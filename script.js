@@ -108,10 +108,7 @@ const displayResult = (result) => {
     
     let minutes = Math.floor(delta / 60) % 60;
         delta -= minutes * 60;
-        
-    console.log(hours,minutes)
     
- 
     let daytime = document.querySelector('.Daytime') // Gün uzunluğunu dt emin değilim
     daytime.innerText = `${hours}h ${minutes}m`//bunu sunset-sunrise da yapılabilir
 
