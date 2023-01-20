@@ -8,36 +8,113 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <img class="gunduz" src="./images/graphicday.png" alt="sunrise-sunset arasi">
+    <!-- <img class="gece" src="./images/graphicnight.png" alt="sunset-sunrise arasi"> -->
     <div class="app">
-        
-        <div class="header">
-            <h1>Weather-App-Day</h1>
-            <img src="./images/graphic.svg" alt="sunrise-sunset arasi">
-            <img src="./images/graphicNight.svg" alt="sunset-sunrise arasi">
-            <input type="text" id="searchBar" placeholder=Location>
-        </div>
-        
-        <div class="content">
+        <div class="DateandBar">
+            <div class="Date">Sunday, 19 May 2019 | 4.30 PM</div>  
             
-            <div class="Date">Sunday, 19 May 2019 | 4.30 PM</div>
+            <input type="text" id="searchBar" placeholder=Location>  
+        </div>
+  
+        <div class="content">
             <div class="Location">Istanbul, TR</div>
-            <div class="Description">Sunny</div>
-            <div class="Temperature">25°C</div>
-            <div class="MaxMin">35°C / 27°C</div>
-            <div class="Humidity">49%</div> <!-- nem oranı -->
-            <div class="Pressure">1,007mBar</div>
-            <div class="Wind">23km/h</div>
-            <div class="Sunrise">6:03 AM</div>
-            <div class="Sunset">7:05 PM</div>
-            <div class="Daytime">13h 1m</div>
-            <div class="NextDay1">Mon,21</div>
-            <div class="NextDay2">Mon,22</div>
-            <div class="NextDay3">Mon,23</div>
+            <div class="row2">
+                <div class="DescriptionandImg">
+                    
+                    <div> <img class="Iconimg" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
+                    
+                    <div class="Description">Sunny</div>
+                </div>
+                    
+                <div class="Temperature">
+                    <div style="font-size: 40px; margin-top: -10px;" >
+                        25
+                    </div>
+                    <div>
+                        °C
+                    </div> 
+                </div>
+                <div class="MaxMin">
+                    <div class="MaxandUparr">
+                        <div class="Max">35°C</div>
+                        <div class="Uparr">&#x2191 </div>
+                    </div>
+                    <div class="MinandDownarr">
+                        <div class="Min">27°C</div>
+                        <div class="Downarr">&#x2193</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row3">
+                <div class="HumidityStuff">
+                    <div class="HumidityImg" > <img src="./images/humidity.svg" alt="Nem image"> </div>
+                    <div class="Humidity">49%</div> <!-- nem oranı -->
+                    <div class="HumidityText" >Humidity</div>
+                </div>
+                <div class="PressureStuff">
+                    <div class="PressureImg"><img src="./images/pressure.svg" alt="Basinç image"></div>
+                    <div class="Pressure">1,007mBar</div>
+                    <div class="PressureText">Pressure</div>
+                </div>
+                <div class="WindStuff">
+                    <div class="WindImg"><img src="./images/wind.svg" alt="rüzgar img"></div>
+                    <div class="Wind">23km/h</div>
+                    <div class="WindText">Wind</div>
+                </div> 
+            </div>
+
+            <div class="row4">
+                <div class="SunriseStuff">
+                    <div class="SunriseImg"><img src="./images/sunrise.svg" alt="Gün doğumu"></div>
+                    <div class="Sunrise">6:03 AM</div>
+                    <div class="SunriseText">Sunrise</div>
+                </div>
+                <div class="SunriseStuff">
+                    <div class="SunsetImg"><img src="./images/sunset.svg" alt="Gün Batimi"></div>
+                    <div class="Sunset">7:05 PM</div>
+                    <div class="SunSetText">Sunset</div>
+                </div>
+                <div class="DaytimeStuff">
+                    <div class="DaytimeImg"><img src="./images/daytime.svg" alt=""></div>
+                    <div class="Daytime">13h 1m</div>
+                    <div class="DaytimeText">Daytime</div>
+                </div>
+            </div>
+
+            <div class="row5">
+                <div class="NextDay1Stuff">
+                    <div> <img height="40px" class="IconimgNd1" src="./images/sunny.svg" alt="parcalibulutlu"> </div>
+                    <div class="NextDay1">Mon,23</div>
+                </div>
+                <div class="NextDay2Stuff">
+                    <div> <img height="40px" class="IconimgNd2" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
+                    <div class="NextDay2">Tue,24</div>
+                </div>
+                <div class="NextDay3Stuff">
+                    <div> <img height="40px" class="IconimgNd3" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
+                    <div class="NextDay3">Wed,25</div>
+                </div>
+                <div class="NextDay4Stuff">
+                    <div> <img height="40px" class="IconimgNd4" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
+                    <div class="NextDay4">Thu,26</div>
+                </div>
+                <div class="NextDay5Stuff">
+                    <div> <img height="40px" class="IconimgNd5" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
+                    <div class="NextDay5">Fri,27</div>
+                </div>
+                <div class="NextDay6Stuff">
+                    <div> <img height="40px" class="IconimgNd6" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
+                    <div class="NextDay6">Sat,28</div>
+                </div>
+                
+            </div>
+            
         </div>
     </div>
     
     <script src="./script.js"></script>
-    <script src="./deneme.js"></script>
-    <script src="./formatisdonewithoutcss.js"></script>
+    
 </body>
 </html>

@@ -1,0 +1,226 @@
+body {
+    width: 100%;
+    padding: 0px ;
+    display: block;
+    margin-top: 0;
+    margin-right:0 ;
+    margin-bottom:0 ;
+    margin-left: 0;
+}
+
+.gece
+{
+
+    position: relative;
+    width: 100%;   
+    padding: 0px ;
+    margin: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+   /* gündüzle aynı yap */
+} 
+
+.gunduz
+{
+    position: relative;
+    width: 100%;   
+    padding: 0px ;
+    margin: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+
+} 
+
+.app
+{
+    
+    position: relative;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 25px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px -16px 40px rgba(0, 0, 0, 0.2);
+    margin-top: -25px;
+    z-index: 2;
+    
+    
+}
+
+.Date{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    margin:5px;
+    text-align: center;
+    color: #999999;
+    float:left
+    }
+/* margin: iki kutu aralığını iki dom arasını belirlermek için */
+
+/* padding: bir kutu içindeki ferahlık içindeki boşluğu vs ayarlama */
+
+#searchBar{
+    margin-top:-10px;
+    margin-right: -25px;
+    width: 80px;
+    line-height: 0px;
+    width: 154px;
+    height: 40px;
+    left: 300px;
+    top: 0px;
+    background: rgba(13, 159, 234, 0.08); 
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    color: #0DA0EA;
+     
+}
+.DateandBar{
+    display: flex;
+    justify-content: space-between;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+}
+.DescriptionandImg{
+    display: flex;
+    flex-direction: column;
+}
+
+.Temperature{
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+}
+.MaxMin{
+    display: flex;
+    flex-direction: column;
+    color: #0DA0EA;
+}
+.MaxandUparr{
+    display: flex;
+    justify-content: space-between;
+}
+.MinandDownarr{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.row3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.row4{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center; 
+}
+
+.row5{
+    margin-top: 20px;
+    max-height: 120px;
+    border: 1px solid #ddd;
+    display: flex;
+    overflow-x: auto; 
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+.row5::-webkit-scrollbar{
+    width: 0;
+}
+/*.NextDay1{
+    margin-left: 20px;
+    min-width: 110px;
+    height: 110px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #ddd;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #0DA0EA;
+}*/
+.NextDay1Stuff{
+    min-width: 110px;
+    height: 110px;
+    line-height: 20px;
+    text-align: center;
+
+    margin-right: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    
+}
+
+.NextDay2Stuff{
+    min-width: 110px;
+    height: 110px;
+    line-height: 20px;
+    text-align: center;
+   
+    margin-right: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+.NextDay3Stuff{
+    min-width: 110px;
+    height: 110px;
+    line-height: 20px;
+    text-align: center;
+    
+    margin-right: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+.NextDay4Stuff{
+    min-width: 110px;
+    height: 110px;
+    line-height: 20px;
+    text-align: center;
+    
+    margin-right: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+.NextDay5Stuff{
+    min-width: 110px;
+    height: 110px;
+    line-height: 20px;
+    text-align: center;
+    
+    margin-right: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+.NextDay6Stuff{
+    min-width: 110px;
+    height: 110px;
+    line-height: 20px;
+    text-align: center;
+  
+    margin-right: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+} 
