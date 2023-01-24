@@ -37,27 +37,31 @@ body {
 {
     
     position: relative;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top: 10px;
-    padding-right: 25px;
+    padding-right: 35px;
+    padding-bottom: 30px;
     border-radius: 25px;
     background: #FFFFFF;
     box-shadow: 0px -16px 40px rgba(0, 0, 0, 0.2);
     margin-top: -25px;
     z-index: 2;
+    margin-bottom: 10px;
     
     
 }
 
 .Date{
+    
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
 
-    margin:5px;
-    text-align: center;
+    margin-top:5px; 
+    margin-left: -13px;
+    text-align: left;
     color: #999999;
     float:left
     }
@@ -67,21 +71,29 @@ body {
 
 #searchBar{
     margin-top:-10px;
-    margin-right: -25px;
-    width: 80px;
-    line-height: 0px;
+    margin-right: -35px;
+    /* width: 80px;
+    line-height: 0px; */
     width: 154px;
     height: 40px;
-    left: 300px;
-    top: 0px;
+    /* left: 300px;
+    top: 0px; */
     background: rgba(13, 159, 234, 0.08); 
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 19px;
     color: #0DA0EA;
-     
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+}
+input[type="text" i] {
+    padding-left: 10px;
+    
 }
 .DateandBar{
     display: flex;
@@ -103,10 +115,32 @@ body {
     justify-content: space-between;
     font-size: 40px;
 }
+.TemperatureValue{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 77px;
+    margin-top: -20px;
+/* identical to box height */
+
+letter-spacing: -0.05em;
+
+color: #000000;
+}
+.DegreeMark{
+    font-size: 15px;
+    margin-top: -5px;
+}
 .MaxMin{
     display: flex;
     flex-direction: column;
-    color: #0DA0EA;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
 }
 .MaxandUparr{
     display: flex;
@@ -124,6 +158,77 @@ body {
     text-align: center;
 }
 
+
+.Humidity{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.05em;
+    color: #444444;
+    margin-bottom: -5px;
+}
+.HumidityText{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #999999;
+    }
+.Pressure{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.05em;
+
+    color: #444444;
+}
+.PressureText{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #999999;
+}
+.Wind{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.05em;
+
+    color: #444444;
+}
+.WindText{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #999999;
+}
+
 .row4{
     margin-top: 20px;
     display: flex;
@@ -131,96 +236,246 @@ body {
     text-align: center; 
 }
 
+.Sunrise{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.05em;
+
+    color: #444444;
+}
+.SunriseText{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #999999;
+}
+.Sunset{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.05em;
+
+    color: #444444;
+}
+.SunsetText{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #999999;
+}
+.Daytime{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.05em;
+
+    color: #444444;
+}
+.DaytimeText{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #999999;
+}
+
 .row5{
     margin-top: 20px;
-    max-height: 120px;
-    border: 1px solid #ddd;
+    margin-left: -10px;
+    /* max-height: 90px; */
+    /* border: 1px solid #ddd; */
+    border: 0ch;
     display: flex;
-    overflow-x: auto; 
-    background: #FFFFFF;
+    overflow-x:auto; 
+    /* background: #FFFFFF; */
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
+    padding:0ch;
+
 }
 .row5::-webkit-scrollbar{
     width: 0;
 }
-/*.NextDay1{
-    margin-left: 20px;
-    min-width: 110px;
-    height: 110px;
-    line-height: 20px;
-    text-align: center;
-    background-color: #ddd;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    color: #0DA0EA;
-}*/
 .NextDay1Stuff{
-    min-width: 110px;
-    height: 110px;
+    min-width: 90px;
+    height: 90px; 
     line-height: 20px;
     text-align: center;
-
     margin-right: 10px;
     background: #FFFFFF;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
-    
+}
+.NextDay1{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 13px;
+    /* letter-spacing: -0.05em;               */
+    color: #444444;
 }
 
 .NextDay2Stuff{
-    min-width: 110px;
-    height: 110px;
+   
+    min-width: 90px;
+   height: 90px; 
     line-height: 20px;
     text-align: center;
-   
     margin-right: 10px;
     background: #FFFFFF;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 }
+.NextDay2{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: -0.05em;              
+    color: #444444;
+}
+
 .NextDay3Stuff{
-    min-width: 110px;
-    height: 110px;
+    min-width: 90px;
+    height: 90px; 
     line-height: 20px;
     text-align: center;
-    
     margin-right: 10px;
     background: #FFFFFF;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
+}
+.NextDay3{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: -0.05em;              
+    color: #444444;
 }
 .NextDay4Stuff{
-    min-width: 110px;
-    height: 110px;
+    min-width: 90px;
+    height: 90px; 
     line-height: 20px;
     text-align: center;
-    
     margin-right: 10px;
     background: #FFFFFF;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 }
+.NextDay4{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: -0.05em;              
+    color: #444444;
+}
+
 .NextDay5Stuff{
-    min-width: 110px;
-    height: 110px;
+    min-width: 90px;
+    height: 90px; 
     line-height: 20px;
     text-align: center;
-    
     margin-right: 10px;
     background: #FFFFFF;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
+}
+.NextDay5{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: -0.05em;              
+    color: #444444;
 }
 .NextDay6Stuff{
-    min-width: 110px;
-    height: 110px;
+    min-width: 90px;
+    height: 90px; 
     line-height: 20px;
     text-align: center;
-  
     margin-right: 10px;
     background: #FFFFFF;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 } 
+.NextDay6{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: -0.05em;              
+    color: #444444;
+}
+
+.SearchandLocation{
+      
+    position: relative;
+    height: 3000px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px -16px 40px rgba(0, 0, 0, 0.2);
+    margin-top: -307px;
+    z-index: 2;
+    
+    
+    
+}
+
+.Searchgunduz
+{
+    position: relative;
+    width: 100%;   
+    padding: 0px ;
+    margin: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+
+} 
+
+#SsearchBar{
+    background: #F3F3F3;
+    border-radius: 4px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+}

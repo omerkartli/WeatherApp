@@ -14,24 +14,25 @@
         <div class="DateandBar">
             <div class="Date">Sunday, 19 May 2019 | 4.30 PM</div>  
             
-            <input type="text" id="searchBar" placeholder=Location>  
+            <input type="text" id="searchBar" placeholder=Location onchange="myFunction()"> 
+     
         </div>
   
         <div class="content">
-            <div class="Location">Istanbul, TR</div>
+            <!-- <div class="Location">Istanbul, TR</div> -->
             <div class="row2">
                 <div class="DescriptionandImg">
                     
-                    <div> <img class="Iconimg" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
+                    <div style="margin: -20px;"> <img class="Iconimg" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
                     
-                    <div class="Description">Sunny</div>
+                    <div class="Description" style="margin: 0px;">Sunny</div>
                 </div>
                     
                 <div class="Temperature">
-                    <div style="font-size: 40px; margin-top: -10px;" >
+                    <div class="TemperatureValue" >
                         25
                     </div>
-                    <div>
+                    <div class="DegreeMark">
                         °C
                     </div> 
                 </div>
@@ -49,7 +50,7 @@
 
             <div class="row3">
                 <div class="HumidityStuff">
-                    <div class="HumidityImg" > <img src="./images/humidity.svg" alt="Nem image"> </div>
+                    <div class="HumidityImg" > <img width="20px" src="./images/humidity.svg" alt="Nem image"> </div>
                     <div class="Humidity">49%</div> <!-- nem oranı -->
                     <div class="HumidityText" >Humidity</div>
                 </div>
@@ -74,7 +75,7 @@
                 <div class="SunriseStuff">
                     <div class="SunsetImg"><img src="./images/sunset.svg" alt="Gün Batimi"></div>
                     <div class="Sunset">7:05 PM</div>
-                    <div class="SunSetText">Sunset</div>
+                    <div class="SunsetText">Sunset</div>
                 </div>
                 <div class="DaytimeStuff">
                     <div class="DaytimeImg"><img src="./images/daytime.svg" alt=""></div>
@@ -92,14 +93,17 @@
                     <div> <img height="40px" class="IconimgNd2" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
                     <div class="NextDay2">Tue,24</div>
                 </div>
+             
                 <div class="NextDay3Stuff">
                     <div> <img height="40px" class="IconimgNd3" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
                     <div class="NextDay3">Wed,25</div>
                 </div>
+                 
                 <div class="NextDay4Stuff">
                     <div> <img height="40px" class="IconimgNd4" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
                     <div class="NextDay4">Thu,26</div>
                 </div>
+                
                 <div class="NextDay5Stuff">
                     <div> <img height="40px" class="IconimgNd5" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
                     <div class="NextDay5">Fri,27</div>
@@ -107,7 +111,7 @@
                 <div class="NextDay6Stuff">
                     <div> <img height="40px" class="IconimgNd6" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
                     <div class="NextDay6">Sat,28</div>
-                </div>
+                </div>  
                 
             </div>
             
@@ -115,6 +119,6 @@
     </div>
     
     <script src="./script.js"></script>
-    
+ 
 </body>
 </html>

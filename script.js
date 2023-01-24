@@ -34,8 +34,9 @@ const displayResult = (result) => {
         minute: 'numeric'
     })
 
-    let loca = document.querySelector('.Location')//class adı location
-    loca.innerText = `${result.location.name}, ${result.location.country}`//jsondan kontrol et bak nerdec
+    // let loca = document.querySelector('.Location')//class adı location
+    // loca.innerText = `${result.location.name}, ${result.location.country}`//jsondan kontrol et bak nerdec
+    
 
     let iconimg = document.querySelector('.Iconimg')
     iconimg.src = `${(result.current.condition.icon)}`
@@ -43,14 +44,16 @@ const displayResult = (result) => {
     let desc = document.querySelector('.Description')
     desc.innerText = `${result.current.condition.text}`
 
-    let tempe = document.querySelector('.Temperature')
-    tempe.innerText = `${Math.round(result.current.temp_c)}°C`
+    let tempe = document.querySelector('.TemperatureValue')
+    tempe.innerText = `${Math.round(result.current.temp_c)}`
+    let tempeSym = document.querySelector('.DegreeMark')
+    tempeSym = `°C`
 
     let maxarr = document.querySelector('.Max')
-    maxarr.innerText = `${Math.round(result.forecast.forecastday[0].day.maxtemp_c)}`
+    maxarr.innerText = `${Math.round(result.forecast.forecastday[0].day.maxtemp_c)}°C`
     
     let minarr = document.querySelector('.Min')
-    minarr.innerText = `${Math.round(result.forecast.forecastday[0].day.mintemp_c)}`
+    minarr.innerText = `${Math.round(result.forecast.forecastday[0].day.mintemp_c)}°C`
     
     let humi = document.querySelector('.Humidity')
     humi.innerText = `${result.current.humidity}%`
@@ -118,7 +121,7 @@ const displayResult = (result) => {
     let daytime = document.querySelector('.Daytime') // Gün uzunluğunu dt emin değilim
     daytime.innerText = `${hours}h ${minutes}m`//bunu sunset-sunrise da yapılabilir
 
-    ////--------------Daytime-------------////////////
+    ////--------------Daytime------Son-------////////////
 
 
     let iconimgnd1 = document.querySelector('.IconimgNd1')
@@ -130,8 +133,8 @@ const displayResult = (result) => {
         weekday: 'short'
     })+', '+date.toLocaleString('en-US', {
         day: 'numeric'
-    })+`\n ${Math.round(result.forecast.forecastday[1].day.maxtemp_c)}` +
-    ` / ${Math.round(result.forecast.forecastday[1].day.mintemp_c)}`
+    })+`\n ${Math.round(result.forecast.forecastday[1].day.maxtemp_c)}°C↑` +
+    `   ${Math.round(result.forecast.forecastday[1].day.mintemp_c)}°C↓`
 
 
     let iconimgnd2 = document.querySelector('.IconimgNd2')
@@ -143,8 +146,8 @@ const displayResult = (result) => {
         weekday: 'short'
     })+', '+date.toLocaleString('en-US', {
         day: 'numeric'
-    })+`\n ${Math.round(result.forecast.forecastday[2].day.maxtemp_c)}` +
-    ` / ${Math.round(result.forecast.forecastday[2].day.mintemp_c)}`
+    })+`\n ${Math.round(result.forecast.forecastday[2].day.maxtemp_c)}°C↑` +
+    `   ${Math.round(result.forecast.forecastday[2].day.mintemp_c)}°C↓`
 
 
     let iconimgnd3 = document.querySelector('.IconimgNd3')
@@ -156,8 +159,8 @@ const displayResult = (result) => {
         weekday: 'short'
     })+', '+date.toLocaleString('en-US', {
         day: 'numeric'
-    })+`\n ${Math.round(result.forecast.forecastday[3].day.maxtemp_c)}` +
-    ` / ${Math.round(result.forecast.forecastday[3].day.mintemp_c)}`
+    })+`\n ${Math.round(result.forecast.forecastday[3].day.maxtemp_c)}°C↑` +
+    `   ${Math.round(result.forecast.forecastday[3].day.mintemp_c)}°C↓`
 
 
     let iconimgnd4 = document.querySelector('.IconimgNd4')
@@ -169,8 +172,8 @@ const displayResult = (result) => {
         weekday: 'short'
     })+', '+date.toLocaleString('en-US', {
         day: 'numeric'
-    })+`\n ${Math.round(result.forecast.forecastday[4].day.maxtemp_c)}` +
-    ` / ${Math.round(result.forecast.forecastday[4].day.mintemp_c)}`
+    })+`\n ${Math.round(result.forecast.forecastday[4].day.maxtemp_c)}°C↑` +
+    `   ${Math.round(result.forecast.forecastday[4].day.mintemp_c)}°C↓`
 
 
     let iconimgnd5 = document.querySelector('.IconimgNd5')
@@ -182,8 +185,8 @@ const displayResult = (result) => {
         weekday: 'short'
     })+', '+date.toLocaleString('en-US', {
         day: 'numeric'
-    })+`\n ${Math.round(result.forecast.forecastday[5].day.maxtemp_c)}` +
-    ` / ${Math.round(result.forecast.forecastday[5].day.mintemp_c)}`
+    })+`\n ${Math.round(result.forecast.forecastday[5].day.maxtemp_c)}°C↑` +
+    `   ${Math.round(result.forecast.forecastday[5].day.mintemp_c)}°C↓`
 
 
     let iconimgnd6 = document.querySelector('.IconimgNd6')
@@ -195,11 +198,17 @@ const displayResult = (result) => {
         weekday: 'short'
     })+', '+date.toLocaleString('en-US', {
         day: 'numeric'
-    })+`\n ${Math.round(result.forecast.forecastday[6].day.maxtemp_c)}` +
-    ` / ${Math.round(result.forecast.forecastday[6].day.mintemp_c)}`
+    })+`\n ${Math.round(result.forecast.forecastday[6].day.maxtemp_c)}°C↑` +
+    `   ${Math.round(result.forecast.forecastday[6].day.mintemp_c)}°C↓`
 
 }     
 
 
 const searchBar=document.getElementById('searchBar')
 searchBar.addEventListener('keypress',setQuery)
+
+
+function myFunction() {
+    var x = document.getElementById("searchBar");
+    x.value = x.value.toUpperCase();
+  }
