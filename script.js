@@ -34,8 +34,8 @@ const displayResult = (result) => {
         minute: 'numeric'
     })
 
-    // let loca = document.querySelector('.Location')//class adı location
-    // loca.innerText = `${result.location.name}, ${result.location.country}`//jsondan kontrol et bak nerdec
+    let loca = document.querySelector('.Location')//class adı location
+    loca.innerText = `${result.location.name}, ${result.location.country}`//jsondan kontrol et bak nerdec
     
 
     let iconimg = document.querySelector('.Iconimg')
@@ -208,7 +208,7 @@ const searchBar=document.getElementById('searchBar')
 searchBar.addEventListener('keypress',setQuery)
 
 
-function myFunction() {
-    var x = document.getElementById("searchBar");
-    x.value = x.value.toUpperCase();
-  }
+// function myFunction() {
+//     var x = document.getElementById("searchBar");
+//     x.value = x.value.toUpperCase();
+//   }
