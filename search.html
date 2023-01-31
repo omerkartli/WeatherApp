@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Page</title>
-    <script src="./search-script.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="search.css">
 </head>
+
 <body>
 
-    
-    <div class="SearchandLocation">
-        <label for="SsearchBar"> Search Locations</label>
-        <input type="search" id="SsearchBar"> 
-    </div>
-    <div class="Location-cards">Istanbul, TR</div>
-    <template data-location-template>
-        <div class="card">
-            <div class="header"></div>
-            <div class="body"></div>
+    <img class="gunduz" src="./images/graphicday.png" alt="sunrise-sunset arasi">
+    <div class="app-search">
+        <div>
+            <p class="label-input">Location</p>
         </div>
-    </template>
-  
 
-    
+        <div class="input-box-and-img">
+            <div class="input-box">
+                <input type="text" id="search-input" placeholder="Search" onkeypress="searchWeather()">
+                <div class="input-box-location-icon">
+                    <img src="./images/locationicon.svg" alt="yer işareti">
+                </div>
+            </div>
+        </div>
+        <div class="city-and-country">
+        
+            <h2 class="first-letter" style="font-size: 40px;"></h2>
+            <ul id="myListL">
+                <ul id="myList"></ul>
+            </ul>
+           
+             
+            
+
+
+            <!-- <div class="Result2FC" style="font-size: 40px;"></div>
+            <div class="Result2">Please enter at least 3 letters to make a search.</div>     -->
+        </div>
+    </div>
+    <script src="./search.js"></script>
 </body>
+
 </html>

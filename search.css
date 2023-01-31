@@ -1,0 +1,96 @@
+
+body {
+    width: 100%;
+    padding: 0px ;
+    display: block;
+    margin-top: 0;
+    margin-right:0 ;
+    margin-bottom:0 ;
+    margin-left: 0;
+}
+.input-box{
+    position: relative;
+    background-color: aqua;
+}
+.input-box-location-icon{
+   
+    position: absolute;
+    left: 90%;
+    right: 10%;
+    margin-top: 10px;
+    background: #000000;
+    
+}
+.gunduz
+{
+    position: relative;
+    width: 100%;   
+    padding: 0px ;
+    margin: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+} 
+.app-search{
+     
+    position: relative;
+    height: 610px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px -16px 40px rgba(0, 0, 0, 0.2);
+    margin-top: -74%;
+    z-index: 2;
+    margin-bottom: 10px;
+}
+
+.label-input{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #999999;
+}
+.input-box-and-img{
+    position: relative;
+    width: 100%;
+    height: 40px;
+
+}
+#search-input{
+    position:absolute;
+    width: 92%; 
+    margin-top:0px;
+    margin-left: 10px;
+    margin-right:10px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 40px;
+    background: #F3F3F3;
+    border-radius: 4px;
+
+}
+.search-deault-text{
+    margin-top:10px;
+    margin-left: 20px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.05em;
+
+color: #444444;
+}
+.city-and-country{
+    margin-top:10px;
+    margin-left: 20px;
+    padding-bottom: 30px;
+}

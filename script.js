@@ -12,13 +12,16 @@ const getResult = (cityName) => {
     console.log(query)
     fetch(query)
     .then(weather => {
+        console.log(typeof(weather))
         return weather.json()
+        
     })
     .then(displayResult)
 }
 
 const displayResult = (result) => {
     console.log(result);//jsona burdan bak
+    console.log(typeof(result))
     let date = new Date();
     let date1 = document.querySelector('.Date')
     date1.innerText = date.toLocaleString('en-US', { 
