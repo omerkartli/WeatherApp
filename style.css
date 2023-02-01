@@ -8,8 +8,7 @@ body {
     margin-left: 0;
 }
 
-.gece
-{
+.gece{
 
     position: relative;
     width: 100%;   
@@ -21,8 +20,7 @@ body {
    /* gündüzle aynı yap */
 } 
 
-.gunduz
-{
+.gunduz{
     position: relative;
     width: 100%;   
     padding: 0px ;
@@ -30,12 +28,9 @@ body {
     right: 0px;
     top: 0px;
     z-index: 1;
-
 } 
 
-.app
-{
-    
+.app{
     position: relative;
     height: 800px;
     padding-left: 30px;
@@ -48,13 +43,11 @@ body {
     box-shadow: 0px -16px 40px rgba(0, 0, 0, 0.2);
     margin-top: -7.5%;
     z-index: 2;
-    margin-bottom: 10px;
-    
-    
+    margin-bottom: 10px; 
 }
 
 .Date{
-    
+   
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
@@ -93,20 +86,24 @@ body {
     border-top-right-radius: 25px;
 
 }
+
 input[type="text" i] {
     padding-left: 10px;
     
 }
+
 .DateandBar{
     display: flex;
     justify-content: space-between;
 }
+
 .row2{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     text-align: center;
 }
+
 .DescriptionandImg{
     display: flex;
     flex-direction: column;
@@ -117,6 +114,7 @@ input[type="text" i] {
     justify-content: space-between;
     font-size: 40px;
 }
+
 .TemperatureValue{
     font-family: 'Barlow';
     font-style: normal;
@@ -124,16 +122,16 @@ input[type="text" i] {
     font-size: 64px;
     line-height: 77px;
     margin-top: -20px;
-/* identical to box height */
-
-letter-spacing: -0.05em;
-
-color: #000000;
+    /* identical to box height */
+    letter-spacing: -0.05em;
+    color: #000000;
 }
+
 .DegreeMark{
     font-size: 15px;
     margin-top: -5px;
 }
+
 .MaxMin{
     display: flex;
     flex-direction: column;
@@ -144,10 +142,12 @@ color: #000000;
     line-height: 19px;
     color: #666666;
 }
+
 .MaxandUparr{
     display: flex;
     justify-content: space-between;
 }
+
 .MinandDownarr{
     display: flex;
     justify-content: space-between; 
@@ -160,7 +160,6 @@ color: #000000;
     text-align: center;
 }
 
-
 .Humidity{
     font-family: 'Barlow';
     font-style: normal;
@@ -171,19 +170,18 @@ color: #000000;
     color: #444444;
     margin-bottom: -5px;
 }
+
 .HumidityText{
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
     line-height: 10px;
-    /* identical to box height */
-
     text-align: center;
     letter-spacing: 0.1em;
-
     color: #999999;
-    }
+}
+
 .Pressure{
     font-family: 'Barlow';
     font-style: normal;
@@ -191,22 +189,20 @@ color: #000000;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.05em;
-
     color: #444444;
 }
+
 .PressureText{
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
     line-height: 10px;
-    /* identical to box height */
-
     text-align: center;
     letter-spacing: 0.1em;
-
     color: #999999;
 }
+
 .Wind{
     font-family: 'Barlow';
     font-style: normal;
@@ -214,20 +210,17 @@ color: #000000;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.05em;
-
     color: #444444;
 }
+
 .WindText{
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
     line-height: 10px;
-    /* identical to box height */
-
     text-align: center;
     letter-spacing: 0.1em;
-
     color: #999999;
 }
 
@@ -245,22 +238,20 @@ color: #000000;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.05em;
-
     color: #444444;
 }
+
 .SunriseText{
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
     line-height: 10px;
-    /* identical to box height */
-
     text-align: center;
     letter-spacing: 0.1em;
-
     color: #999999;
 }
+
 .Sunset{
     font-family: 'Barlow';
     font-style: normal;
@@ -268,22 +259,20 @@ color: #000000;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.05em;
-
     color: #444444;
 }
+
 .SunsetText{
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
     line-height: 10px;
-    /* identical to box height */
-
     text-align: center;
     letter-spacing: 0.1em;
-
     color: #999999;
 }
+
 .Daytime{
     font-family: 'Barlow';
     font-style: normal;
@@ -291,20 +280,17 @@ color: #000000;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.05em;
-
     color: #444444;
 }
+
 .DaytimeText{
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
     line-height: 10px;
-    /* identical to box height */
-
     text-align: center;
     letter-spacing: 0.1em;
-
     color: #999999;
 }
 
@@ -322,9 +308,11 @@ color: #000000;
     padding:0ch;
 
 }
+
 .row5::-webkit-scrollbar{
     width: 0;
 }
+
 .NextDay1Stuff{
     min-width: 90px;
     height: 90px; 
@@ -335,6 +323,7 @@ color: #000000;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 }
+
 .NextDay1{
     font-family: 'Barlow';
     font-style: normal;
@@ -348,7 +337,7 @@ color: #000000;
 .NextDay2Stuff{
    
     min-width: 90px;
-   height: 90px; 
+    height: 90px; 
     line-height: 20px;
     text-align: center;
     margin-right: 10px;
@@ -356,6 +345,7 @@ color: #000000;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 }
+
 .NextDay2{
     font-family: 'Barlow';
     font-style: normal;
@@ -376,6 +366,7 @@ color: #000000;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 }
+
 .NextDay3{
     font-family: 'Barlow';
     font-style: normal;
@@ -385,6 +376,7 @@ color: #000000;
     letter-spacing: -0.05em;              
     color: #444444;
 }
+
 .NextDay4Stuff{
     min-width: 90px;
     height: 90px; 
@@ -395,6 +387,7 @@ color: #000000;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 }
+
 .NextDay4{
     font-family: 'Barlow';
     font-style: normal;
@@ -415,6 +408,7 @@ color: #000000;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 }
+
 .NextDay5{
     font-family: 'Barlow';
     font-style: normal;
@@ -424,6 +418,7 @@ color: #000000;
     letter-spacing: -0.05em;              
     color: #444444;
 }
+
 .NextDay6Stuff{
     min-width: 90px;
     height: 90px; 
@@ -434,6 +429,7 @@ color: #000000;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 } 
+
 .NextDay6{
     font-family: 'Barlow';
     font-style: normal;
@@ -444,8 +440,7 @@ color: #000000;
     color: #444444;
 }
 
-.SearchandLocation{
-      
+.SearchandLocation{   
     position: relative;
     height: 3000px;
     padding-left: 30px;
@@ -456,14 +451,10 @@ color: #000000;
     background: #FFFFFF;
     box-shadow: 0px -16px 40px rgba(0, 0, 0, 0.2);
     margin-top: -307px;
-    z-index: 2;
-    
-    
-    
+    z-index: 2; 
 }
 
-.Searchgunduz
-{
+.Searchgunduz{
     position: relative;
     width: 100%;   
     padding: 0px ;
@@ -471,7 +462,6 @@ color: #000000;
     right: 0px;
     top: 0px;
     z-index: 1;
-
 } 
 
 #SsearchBar{

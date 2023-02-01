@@ -8,12 +8,13 @@ body {
     margin-bottom:0 ;
     margin-left: 0;
 }
+
 .input-box{
     position: relative;
     background-color: aqua;
 }
+
 .input-box-location-icon{
-   
     position: absolute;
     left: 90%;
     right: 10%;
@@ -21,6 +22,7 @@ body {
     background: #000000;
     
 }
+
 .gunduz
 {
     position: relative;
@@ -31,8 +33,8 @@ body {
     top: 0px;
     z-index: 1;
 } 
+
 .app-search{
-     
     position: relative;
     height: 610px;
     padding-left: 10px;
@@ -57,12 +59,14 @@ body {
     text-align: center;
     color: #999999;
 }
+
 .input-box-and-img{
     position: relative;
     width: 100%;
     height: 40px;
 
 }
+
 #search-input{
     position:absolute;
     width: 92%; 
@@ -77,6 +81,7 @@ body {
     border-radius: 4px;
 
 }
+
 .search-deault-text{
     margin-top:10px;
     margin-left: 20px;
@@ -86,9 +91,9 @@ body {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: -0.05em;
-
-color: #444444;
+    color: #444444;
 }
+
 .city-and-country{
     margin-top:10px;
     margin-left: 20px;
