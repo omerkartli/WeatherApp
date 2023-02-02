@@ -8,8 +8,7 @@ body {
     margin-left: 0;
 }
 
-.gece{
-
+.night{
     position: relative;
     width: 100%;   
     padding: 0px ;
@@ -17,10 +16,9 @@ body {
     right: 0px;
     top: 0px;
     z-index: 1;
-   /* gündüzle aynı yap */
 } 
 
-.gunduz{
+.day{
     position: relative;
     width: 100%;   
     padding: 0px ;
@@ -32,10 +30,10 @@ body {
 
 .app{
     position: relative;
-    height: 800px;
-    padding-left: 30px;
+    height: 100%;
+    padding-left: 11%;
     padding-top: 10px;
-    padding-right: 35px;
+    padding-right: 13%;
     padding-bottom: 30px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -46,33 +44,25 @@ body {
     margin-bottom: 10px; 
 }
 
-.Date{
-   
+.Date{ 
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-
     margin-top:5px; 
-    margin-left: -13px;
+    margin-left: -23px;
     text-align: left;
     color: #999999;
     float:left
-    }
-/* margin: iki kutu aralığını iki dom arasını belirlermek için */
-
-/* padding: bir kutu içindeki ferahlık içindeki boşluğu vs ayarlama */
+}
 
 #searchBar{
     margin-top:-10px;
-    margin-right: -35px;
-    /* width: 80px;
-    line-height: 0px; */
-    width: 154px;
-    height: 40px;
-    /* left: 300px;
-    top: 0px; */
+    margin-right:-17.6%;
+    padding-left:20px;
+    width: 140px;
+    height: 46px;
     background: rgba(13, 159, 234, 0.08); 
     font-family: 'Barlow';
     font-style: normal;
@@ -84,57 +74,105 @@ body {
     outline: none;
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
-
 }
 
 input[type="text" i] {
-    padding-left: 10px;
-    
+    padding-left: 10px; 
+}
+
+.input-box-location-icon-blue{
+    position: absolute;
+    left: 93%;
+    right: 7%;
+    margin-top: 7px;
+    background: #000000;
 }
 
 .DateandBar{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .row2{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
     text-align: center;
 }
 
-.DescriptionandImg{
-    display: flex;
-    flex-direction: column;
+.DescriptionAndImg{
+   text-align: center;
+}
+.ImageIcon{
+    width: 50px;
+    height: 50px;
+   
+
+}
+.Description{
+   margin-top: -7px;
+   font-family: 'Barlow';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+   letter-spacing: -0.05em;
+   color: #000000;
 }
 
 .Temperature{
+    position: relative;
     display: flex;
     justify-content: space-between;
     font-size: 40px;
 }
 
 .TemperatureValue{
+    position: relative;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 300;
     font-size: 64px;
     line-height: 77px;
-    margin-top: -20px;
-    /* identical to box height */
+    margin-top: 0px;
     letter-spacing: -0.05em;
     color: #000000;
 }
 
 .DegreeMark{
-    font-size: 15px;
-    margin-top: -5px;
+    position: relative;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #666666;
+    margin-top: 10px;
 }
 
 .MaxMin{
+    position: relative;
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 300;
+    color: #666666;
+}
+.Max{
+    position: relative;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+    
+}
+.Min{
+    position: relative;
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 300;
@@ -144,17 +182,27 @@ input[type="text" i] {
 }
 
 .MaxandUparr{
+    position: relative;
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
+
 .MinandDownarr{
+    position: relative;
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+    height: 8px; 
+}
+.Uparr{
+    margin-top: -1px;
+
 }
 
 .row3{
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -162,17 +210,19 @@ input[type="text" i] {
 
 .Humidity{
     font-family: 'Barlow';
+    margin-top: 5px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.05em;
     color: #444444;
-    margin-bottom: -5px;
+ 
 }
 
 .HumidityText{
     font-family: 'Barlow';
+    margin-top: 5px;
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
@@ -184,6 +234,7 @@ input[type="text" i] {
 
 .Pressure{
     font-family: 'Barlow';
+    margin-top: 5px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -194,6 +245,8 @@ input[type="text" i] {
 
 .PressureText{
     font-family: 'Barlow';
+    margin-top: 5px;
+    margin-top: 5px;
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
@@ -205,6 +258,7 @@ input[type="text" i] {
 
 .Wind{
     font-family: 'Barlow';
+    margin-top: 5px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -215,6 +269,7 @@ input[type="text" i] {
 
 .WindText{
     font-family: 'Barlow';
+    margin-top: 5px;
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
@@ -225,7 +280,7 @@ input[type="text" i] {
 }
 
 .row4{
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
     text-align: center; 
@@ -233,6 +288,7 @@ input[type="text" i] {
 
 .Sunrise{
     font-family: 'Barlow';
+    margin-top: 5px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -243,6 +299,7 @@ input[type="text" i] {
 
 .SunriseText{
     font-family: 'Barlow';
+    margin-top: 5px;
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
@@ -254,16 +311,18 @@ input[type="text" i] {
 
 .Sunset{
     font-family: 'Barlow';
+    margin-top: 5px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    letter-spacing: -0.05em;
+    /* letter-spacing: -0.05em; */
     color: #444444;
 }
 
 .SunsetText{
     font-family: 'Barlow';
+    margin-top: 5px;
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
@@ -275,6 +334,7 @@ input[type="text" i] {
 
 .Daytime{
     font-family: 'Barlow';
+    margin-top: 5px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -285,6 +345,7 @@ input[type="text" i] {
 
 .DaytimeText{
     font-family: 'Barlow';
+    margin-top: 5px;
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
@@ -296,14 +357,13 @@ input[type="text" i] {
 
 .row5{
     margin-top: 20px;
-    margin-left: -10px;
-    /* max-height: 90px; */
-    /* border: 1px solid #ddd; */
-    border: 0ch;
+    margin-left: -7%;
+    margin-right: -40px;
+    border: 2px;
     display: flex;
-    overflow-x:auto; 
-    /* background: #FFFFFF; */
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    overflow-x:auto;
+    background: #FFFFFF; 
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);;
     border-radius: 16px;
     padding:0ch;
 
@@ -311,16 +371,17 @@ input[type="text" i] {
 
 .row5::-webkit-scrollbar{
     width: 0;
+    height: 0;
 }
 
 .NextDay1Stuff{
-    min-width: 90px;
-    height: 90px; 
+    min-width: 95px;
+    height: 100px; 
     line-height: 20px;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 17px;
     background: #FFFFFF;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.021); 
     border-radius: 16px;
 }
 
@@ -330,17 +391,17 @@ input[type="text" i] {
     font-weight: 200;
     font-size: 13px;
     line-height: 13px;
-    /* letter-spacing: -0.05em;               */
+    /*letter-spacing: -0.05em;     */          
     color: #444444;
 }
 
 .NextDay2Stuff{
    
-    min-width: 90px;
-    height: 90px; 
+    min-width: 95px;
+    height: 100px; 
     line-height: 20px;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 17px;
     background: #FFFFFF;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
@@ -357,11 +418,11 @@ input[type="text" i] {
 }
 
 .NextDay3Stuff{
-    min-width: 90px;
-    height: 90px; 
+    min-width: 95px;
+    height: 100px;  
     line-height: 20px;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 17px;
     background: #FFFFFF;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
@@ -378,12 +439,12 @@ input[type="text" i] {
 }
 
 .NextDay4Stuff{
-    min-width: 90px;
-    height: 90px; 
+    min-width: 95px;
+    height: 100px;  
     line-height: 20px;
     text-align: center;
     margin-right: 10px;
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 }
@@ -399,8 +460,8 @@ input[type="text" i] {
 }
 
 .NextDay5Stuff{
-    min-width: 90px;
-    height: 90px; 
+    min-width: 95px;
+    height: 100px;  
     line-height: 20px;
     text-align: center;
     margin-right: 10px;
@@ -420,8 +481,8 @@ input[type="text" i] {
 }
 
 .NextDay6Stuff{
-    min-width: 90px;
-    height: 90px; 
+    min-width: 95px;
+    height: 100px;  
     line-height: 20px;
     text-align: center;
     margin-right: 10px;
@@ -440,34 +501,3 @@ input[type="text" i] {
     color: #444444;
 }
 
-.SearchandLocation{   
-    position: relative;
-    height: 3000px;
-    padding-left: 30px;
-    padding-top: 10px;
-    padding-right: 35px;
-    padding-bottom: 30px;
-    border-radius: 25px;
-    background: #FFFFFF;
-    box-shadow: 0px -16px 40px rgba(0, 0, 0, 0.2);
-    margin-top: -307px;
-    z-index: 2; 
-}
-
-.Searchgunduz{
-    position: relative;
-    width: 100%;   
-    padding: 0px ;
-    margin: 0px;
-    right: 0px;
-    top: 0px;
-    z-index: 1;
-} 
-
-#SsearchBar{
-    background: #F3F3F3;
-    border-radius: 4px;
-    position: relative;
-    width: 100%;
-    height: 40px;
-}

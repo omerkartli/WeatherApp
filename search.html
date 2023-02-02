@@ -19,24 +19,20 @@
 
         <div class="input-box-and-img">
             <div class="input-box">
-                <input type="text" id="search-input" placeholder="Search" onkeypress="searchWeather()">
+                <input type="text" id="search-input" placeholder="Search" onkeyup="searchWeather()">
                 <div class="input-box-location-icon">
                     <img src="./images/locationicon.svg" alt="yer işareti">
                 </div>
             </div>
         </div>
         <div class="city-and-country">
-        
-            <h2 class="first-letter" style="font-size: 40px;"></h2>
-            <ul id="myListOutput">
+            <ul id="myListOutput" style="margin-bottom: 400px;"> Please enter at least 3 letters to make a search.
                 
             </ul>          
-
-            <!-- <div class="Result2FC" style="font-size: 40px;"></div>
-            <div class="Result2">Please enter at least 3 letters to make a search.</div>     -->
         </div>
     </div>
     <script src="./search.js"></script>
+    
 </body>
 
 </html>

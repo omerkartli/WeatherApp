@@ -12,13 +12,15 @@ body {
 .input-box{
     position: relative;
     background-color: aqua;
+    border-radius: 4px;
+   
 }
 
 .input-box-location-icon{
     position: absolute;
     left: 90%;
     right: 10%;
-    margin-top: 10px;
+    margin-top: 13px;
     background: #000000;
     
 }
@@ -34,20 +36,28 @@ body {
     z-index: 1;
 } 
 
+
+
 .app-search{
     position: relative;
-    height: 610px;
+    height: 100%x;
     padding-left: 10px;
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    overflow-x:auto;
     background: #FFFFFF;
     box-shadow: 0px -16px 40px rgba(0, 0, 0, 0.2);
     margin-top: -74%;
     z-index: 2;
     margin-bottom: 10px;
+    border: 10px solid transparent
+}
+.app-search::-webkit-scrollbar{
+    width: 0;
+    height: 0;
 }
 
 .label-input{
@@ -58,6 +68,7 @@ body {
     line-height: 19px;
     text-align: center;
     color: #999999;
+   
 }
 
 .input-box-and-img{
@@ -75,10 +86,12 @@ body {
     margin-right:10px;
     font-family: 'Barlow';
     font-style: normal;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 40px;
     background: #F3F3F3;
     border-radius: 4px;
+    padding-left: 15px;
+    border: 1px solid transparent
 
 }
 
@@ -98,4 +111,15 @@ body {
     margin-top:10px;
     margin-left: 20px;
     padding-bottom: 30px;
+}
+#myListOutput{
+    margin-left: -35px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.05em;
+
+    color: #444444;
 }
