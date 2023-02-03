@@ -359,16 +359,18 @@ input[type="text" i] {
     margin-top: 20px;
     margin-left: -7%;
     margin-right: -40px;
-    border: 2px;
+
+    height: auto;
     display: flex;
     overflow-x:auto;
-    background: #FFFFFF; 
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);;
     border-radius: 16px;
-    padding:0ch;
-
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);  
+    
 }
-
+.row5:-webkit-box{
+    border: 0;
+}
 .row5::-webkit-scrollbar{
     width: 0;
     height: 0;
@@ -381,7 +383,8 @@ input[type="text" i] {
     text-align: center;
     margin-right: 17px;
     background: #FFFFFF;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.021); 
+    border: 2px;
+    box-shadow: 0px 10px 18px  rgba(0, 0, 0, 0.1); 
     border-radius: 16px;
 }
 
@@ -444,7 +447,7 @@ input[type="text" i] {
     line-height: 20px;
     text-align: center;
     margin-right: 10px;
-    /* background: #FFFFFF; */
+    background: #FFFFFF;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 }

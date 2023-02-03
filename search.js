@@ -13,7 +13,7 @@ function searchWeather() {
 const displayResult2 = (results) => {
 
   console.log('display')
-  
+
   let result = results.sort((a, b) => (a.city > b.city) ? 1 : ((b.city > a.city) ? -1 : 0))//sort the cities
   console.log(result);
 
@@ -31,54 +31,51 @@ const displayResult2 = (results) => {
 
   console.log(output)
 
-    let listL = document.getElementById("myListOutput");
-    listL.innerHTML = "";
-  
-    for (let i=0; i<output.length; i++){
-      
-      let alphabet = document.createElement("li");
-      alphabet.innerText = output[i].alphabet[0];
-      alphabet.style.marginBottom = "17px"
-      alphabet.style.marginTop = "5px"
-      alphabet.style.fontSize = "40px";
-      alphabet.style.color = " #AAAAAA";
-      alphabet.style.fontFamily = "Barlow";
-      alphabet.style.fontStyle = "normal";
-      alphabet.style.fontWeight = 300;
-      alphabet.style.fontSize = "40px";
-      alphabet.style.lineHeight = "48px";
-      alphabet.style.letterSpacing = "-0.5em";
-      alphabet.style.listStyleType = "none"
-      listL.appendChild(alphabet);
+  let listL = document.getElementById("myListOutput");
+  listL.innerHTML = "";
 
-      for(let j=0; j<output[i].cities.length; j++){
-      
-        let citiess = document.createElement("li");
-        let link = document.createElement("a");
-        const first = output[i].cities[j].split(',')[0]//first value City name
-        // console.log(first);
-        link.setAttribute("href", `index.html?city=${first}`)
-        link.innerText = output[i].cities[j];
-        citiess.appendChild(link)
-        citiess.style.marginBottom = "5px"
-        citiess.style.listStyleType = "none";
-        link.style.textDecoration = "none";
-        link.style.textAnchor = "none";
-        link.style.color = "#444444"
-        citiess.style.textDecoration = "none";
-        link.style.fontFamily = 'Barlow';
-        link.style.fontStyle = "normal";
-        link.style.fontSize = "18px";
-        link.style.lineHeight = "22px";
-        link.style.fontWeight = "400";
-        link.style.letterSpacing = "-0.05em";
-        listL.appendChild(citiess)
-      }
-      
+  for (let i = 0; i < output.length; i++) {
+
+    let alphabet = document.createElement("li");
+    alphabet.innerText = output[i].alphabet[0];
+    alphabet.style.marginBottom = "17px"
+    alphabet.style.marginTop = "5px"
+    alphabet.style.fontSize = "40px";
+    alphabet.style.color = " #AAAAAA";
+    alphabet.style.fontFamily = "Barlow";
+    alphabet.style.fontStyle = "normal";
+    alphabet.style.fontWeight = 300;
+    alphabet.style.fontSize = "40px";
+    alphabet.style.lineHeight = "48px";
+    alphabet.style.letterSpacing = "-0.5em";
+    alphabet.style.listStyleType = "none"
+    listL.appendChild(alphabet);
+
+    for (let j = 0; j < output[i].cities.length; j++) {
+
+      let citiess = document.createElement("li");
+      let link = document.createElement("a");
+      const first = output[i].cities[j].split(',')[0]//first value City name
+      // console.log(first);
+      link.setAttribute("href", `index.html?city=${first}`)
+      link.innerText = output[i].cities[j];
+      citiess.appendChild(link)
+      citiess.style.marginBottom = "5px"
+      citiess.style.listStyleType = "none";
+      link.style.textDecoration = "none";
+      link.style.textAnchor = "none";
+      link.style.color = "#444444"
+      citiess.style.textDecoration = "none";
+      link.style.fontFamily = 'Barlow';
+      link.style.fontStyle = "normal";
+      link.style.fontSize = "18px";
+      link.style.lineHeight = "22px";
+      link.style.fontWeight = "400";
+      link.style.letterSpacing = "-0.05em";
+      listL.appendChild(citiess)
     }
-  
-    
-  
+
+  }
 }
 
 

@@ -4,9 +4,8 @@ const key = 'a528639a7c7242d5bb755022230202'
 
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
+console.log(params)
 console.log(params.city)
-
-
 
 document.getElementById('searchBar').onclick = function () {
     console.log('clicked')
