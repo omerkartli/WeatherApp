@@ -7,119 +7,110 @@
     <title>WeatherApp</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <img class="day" src="./images/graphicday.png" alt="sunrise-sunset arasi">
-    <!-- <img class="night" src="" alt="sunset-sunrise arasi">  -->
+    <img class="day" src="./images/graphicday.png">
     <div class="app">
-        <div class="DateandBar">
-            <div class="Date">Sunday, 19 May 2019 | 4.30 PM</div>  
-            <input type="text" id="searchBar" placeholder=Location onkeypress="getResult()">
+        <div class="date-and-bar">
+            <div class="date">Sunday, 19 May 2019 | 4.30 PM</div>  
+            <input type="text" id="search-bar" placeholder=Location onkeypress="getResult()">
             <div class="input-box-location-icon-blue">
-                <img src="./images/locationiconblue.svg" alt="yer işareti" height="12px">
+                <img src="./images/locationiconblue.svg" alt="location ico" height="12px">
             </div> 
         </div>
+
         <div class="content">
-            <!-- <div class="Location">Istanbul, TR</div>  -->
+
             <div class="row2">
-                <div class="DescriptionAndImg">
-                    <div class="ImageIcon"> <img width="50px" height="50px" class="Iconimg" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
-                    <div class="Description">Sunny</div>
-                </div>
-
-                <div class="Temperature">
-                    <div class="TemperatureValue" >
-                        25
+                <div class="description-and-image">
+                    <div class="image-icon"> 
+                        <img width="50px" height="50px" class="icon-image" src="./images/bulutlugenel.svg"> 
                     </div>
-                    <div class="DegreeMark">
-                        °C
-                    </div> 
+                    <div class="description">Sunny</div>
                 </div>
-
-                <div class="MaxMin">
-                    <div class="MaxandUparr">
-                        <div class="Max">35°C</div>
-                        <div class="Uparr">&#x2191 </div>
+                <div class="temperature">
+                    <div class="temperature-value" >25</div>
+                    <div class="degree-icon">°C</div> 
+                </div>
+                <div class="max-and-min">
+                    <div class="max-and-up-array">
+                        <div class="max-temperature">35°C</div>
+                        <div class="up-array">&#x2191 </div>
                     </div>
-                    <div class="MinandDownarr">
-                        <div class="Min">27°C</div>
-                        <div class="Downarr">&#x2193</div>
+                    <div class="min-and-down-array">
+                        <div class="min-temperature">27°C</div>
+                        <div class="down-array">&#x2193</div>
                     </div>
                 </div>
             </div>
 
             <div class="row3">
-                <div class="HumidityStuff">
-                    <div class="HumidityImg" > <img width="24px" height="24px" src="./images/humidity.svg" alt="Nem image"> </div>
-                    <div class="Humidity">49%</div> <!-- nem oranı -->
-                    <div class="HumidityText" >Humidity</div>
+                <div class="humidity-stuff">
+                    <div class="humidity-image" > <img width="24px" height="24px" src="./images/humidity.svg"> </div>
+                    <div class="humidity">49%</div> 
+                    <div class="humidity-text" >Humidity</div>
                 </div>
-                <div class="PressureStuff" style="margin-left: 5px;">
-                    <div class="PressureImg"><img width="24px" height="24px" src="./images/pressure.svg" alt="Basinç image"></div>
-                    <div class="Pressure">1,007mBar</div>
-                    <div class="PressureText">Pressure</div>
+                <div class="pressure-stuff" style="margin-left: 5px;">
+                    <div class="pressure-image"><img width="24px" height="24px" src="./images/pressure.svg"></div>
+                    <div class="pressure">1,007mBar</div>
+                    <div class="pressure-text">Pressure</div>
                 </div>
-                <div class="WindStuff">
-                    <div class="WindImg"><img width="24px" height="24px" src="./images/wind.svg" alt="rüzgar img"></div>
-                    <div class="Wind">23km/h</div>
-                    <div class="WindText">Wind</div>
+                <div class="wind-stuff">
+                    <div class="wind-image"><img width="24px" height="24px" src="./images/wind.svg"></div>
+                    <div class="wind">23km/h</div>
+                    <div class="wind-text">Wind</div>
                 </div> 
             </div>
 
             <div class="row4">
-                <div class="SunriseStuff">
-                    <div class="SunriseImg"><img width="24px" height="24px" src="./images/sunrise.svg" alt="Gün doğumu"></div>
-                    <div class="Sunrise">6:03 AM</div>
-                    <div class="SunriseText">Sunrise</div>
+                <div class="sunrise-stuff">
+                    <div class="sunrise-image"><img width="24px" height="24px" src="./images/sunrise.svg"></div>
+                    <div class="sunrise">6:03 AM</div>
+                    <div class="sunrise-text">Sunrise</div>
                 </div>
-                <div class="SunsetStuff" style="margin-left: -10px;">
-                    <div class="SunsetImg"><img width="24px" height="24px" src="./images/sunset.svg" alt="Gün Batimi"></div>
-                    <div class="Sunset">7:05 PM</div>
-                    <div class="SunsetText">Sunset</div>
+                <div class="sunset-stuff" style="margin-left: -10px;">
+                    <div class="sunset-image"><img width="24px" height="24px" src="./images/sunset.svg"></div>
+                    <div class="sunset">7:05 PM</div>
+                    <div class="sunset-text">Sunset</div>
                 </div>
-                <div class="DaytimeStuff">
-                    <div class="DaytimeImg"><img width="24px" height="24px" src="./images/daytime.svg" alt=""></div>
-                    <div class="Daytime">13h 1m</div>
-                    <div class="DaytimeText">Daytime</div>
+                <div class="daytime-stuff">
+                    <div class="daytime-image"><img width="24px" height="24px" src="./images/daytime.svg"></div>
+                    <div class="daytime">13h 1m</div>
+                    <div class="daytime-text">Daytime</div>
                 </div>
             </div>
 
             <div class="row5">
-                <div class="NextDay1Stuff">
-                    <div> <img height="44px" class="IconimgNd1" src="./images/sunny.svg" alt="parcalibulutlu"> </div>
-                    <div class="NextDay1">Mon,23</div>
+                <div class="next-day1-stuff">
+                    <div> <img height="44px" class="icon-image1" src="./images/sunny.svg"> </div>
+                    <div class="next-day1">Mon,23</div>
                 </div>
-                <div class="NextDay2Stuff">
-                    <div> <img height="44px" class="IconimgNd2" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
-                    <div class="NextDay2">Tue,24</div>
+                <div class="next-day2-stuff">
+                    <div> <img height="44px" class="icon-image2" src="./images/bulutlugenel.svg"> </div>
+                    <div class="next-day2">Tue,24</div>
                 </div>
-             
-                <div class="NextDay3Stuff">
-                    <div> <img height="44px" class="IconimgNd3" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
-                    <div class="NextDay3">Wed,25</div>
+                <div class="next-day3-stuff">
+                    <div> <img height="44px" class="icon-image3" src="./images/bulutlugenel.svg"> </div>
+                    <div class="next-day3">Wed,25</div>
                 </div>
-                 
-                <div class="NextDay4Stuff">
-                    <div> <img height="40px" class="IconimgNd4" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
-                    <div class="NextDay4">Thu,26</div>
+                <div class="next-day4-stuff">
+                    <div> <img height="40px" class="icon-image4" src="./images/bulutlugenel.svg"> </div>
+                    <div class="next-day4">Thu,26</div>
                 </div>
-                
-                <div class="NextDay5Stuff">
-                    <div> <img height="40px" class="IconimgNd5" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
-                    <div class="NextDay5">Fri,27</div>
+                <div class="next-day5-stuff">
+                    <div> <img height="40px" class="icon-image5" src="./images/bulutlugenel.svg"> </div>
+                    <div class="next-day5">Fri,27</div>
                 </div>
-               
-                <div class="NextDay6Stuff">
-                    <div> <img height="40px" class="IconimgNd6" src="./images/bulutlugenel.svg" alt="parcalibulutlu"> </div>
-                    <div class="NextDay6">Sat,28</div>
-                </div>    <!-- -->
-                
+                <div class="next-day6-stuff">
+                    <div> <img height="40px" class="icon-image6" src="./images/bulutlugenel.svg"> </div>
+                    <div class="next-day6">Sat,28</div>
+                </div> 
             </div>
-            
+
         </div>
+
     </div>
-    
     <script src="./script.js"></script>
     <script src="./search.js"></script>
- 
 </body>
 </html>

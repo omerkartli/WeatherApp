@@ -1,20 +1,16 @@
 const API_URL2 = 'https://www.yahoo.com/news/_tdnews/api/resource/WeatherSearch;text'
-
 function searchWeather() {
-
   const searchTerm = document.getElementById("search-input").value;
-  if (searchTerm.length < 3) return;//if press enter 2 letter is without enter 3 letter is enough
+  if (searchTerm.length < 3) return;
   let query = `${API_URL2}=${searchTerm}`
   console.log(query)
   fetch(query)
     .then(response => response.json())
     .then(displayResult2)
 };
+
 const displayResult2 = (results) => {
-
-  console.log('display')
-
-  let result = results.sort((a, b) => (a.city > b.city) ? 1 : ((b.city > a.city) ? -1 : 0))//sort the cities
+  let result = results.sort((a, b) => (a.city > b.city) ? 1 : ((b.city > a.city) ? -1 : 0))
   console.log(result);
 
   const output = [...result].reduce((acc, curr, i, k) => {
@@ -29,13 +25,9 @@ const displayResult2 = (results) => {
     return acc;
   }, []).sort();
 
-  console.log(output)
-
-  let listL = document.getElementById("myListOutput");
+  let listL = document.getElementById("my-list-output");
   listL.innerHTML = "";
-
   for (let i = 0; i < output.length; i++) {
-
     let alphabet = document.createElement("li");
     alphabet.innerText = output[i].alphabet[0];
     alphabet.style.marginBottom = "17px"
@@ -52,11 +44,9 @@ const displayResult2 = (results) => {
     listL.appendChild(alphabet);
 
     for (let j = 0; j < output[i].cities.length; j++) {
-
       let citiess = document.createElement("li");
       let link = document.createElement("a");
-      const first = output[i].cities[j].split(',')[0]//first value City name
-      // console.log(first);
+      const first = output[i].cities[j].split(',')[0]
       link.setAttribute("href", `index.html?city=${first}`)
       link.innerText = output[i].cities[j];
       citiess.appendChild(link)
@@ -74,7 +64,6 @@ const displayResult2 = (results) => {
       link.style.letterSpacing = "-0.05em";
       listL.appendChild(citiess)
     }
-
   }
 }
 
